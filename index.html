@@ -88,6 +88,8 @@ details{margin-top:20px}
 summary{cursor:pointer;color:var(--muted)}
 details .row{margin-top:14px}
 
+.version{margin:28px 0 0;text-align:center;font-size:.9rem;color:var(--muted)}
+
 @media (max-width:720px){
   .grid{grid-template-columns:1fr}
   .hero{grid-template-columns:84px 1fr;gap:16px;padding:18px}
@@ -161,9 +163,18 @@ details .row{margin-top:14px}
       <div class="err" id="expMsg"></div>
     </section>
   </div>
+
+  <footer class="version" id="version"></footer>
 </main>
 
 <script>
+// ---------- Version ----------
+// Bei jeder Änderung hier die Versionsnummer erhöhen und das Datum anpassen (JJJJ-MM-TT).
+const APP_VERSION = "1.1";
+const APP_DATE = "2026-10-28";
+document.getElementById("version").textContent =
+  "Version " + APP_VERSION + " · Stand " + APP_DATE.split("-").reverse().join(".");
+
 // ---------- Grundlagen ----------
 // Anteil des Jahresverbrauchs je Monat (Jan–Dez) in Prozent – typische Heizkurve in Deutschland
 const MONTH_SHARE = [17, 15, 13, 9, 5, 1.5, 1, 1, 3.5, 8, 12, 14];
