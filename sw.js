@@ -1,6 +1,6 @@
 // Service Worker: speichert die App-Dateien, damit sie auch ohne Internet startet.
 // Bei Änderungen an der App die Versionsnummer erhöhen (v1 -> v2).
-const CACHE = "heizoel-v1";
+const CACHE = "heizoel-v2";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
