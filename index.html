@@ -33,6 +33,7 @@
   color-scheme: dark;
 }
 *,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none !important}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,system-ui,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.5}
 main{max-width:980px;margin:0 auto;padding:20px 16px 48px}
@@ -170,7 +171,7 @@ details .row{margin-top:14px}
 <script>
 // ---------- Version ----------
 // Bei jeder Änderung hier die Versionsnummer erhöhen und das Datum anpassen (JJJJ-MM-TT).
-const APP_VERSION = "1.1";
+const APP_VERSION = "1.2";
 const APP_DATE = "2026-10-28";
 document.getElementById("version").textContent =
   "Version " + APP_VERSION + " · Stand " + APP_DATE.split("-").reverse().join(".");
